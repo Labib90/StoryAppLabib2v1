@@ -8,7 +8,7 @@ import com.example.storyapplabib2.view.login.LoginViewModel
 import com.example.storyapplabib2.view.main.MainViewModel
 import com.example.storyapplabib2.view.welcome.WelcomeViewModel
 
-class ViewModelFactory(private val pref: UserPreference) : ViewModelProvider.Factory {
+class ViewModelFactory(private val pref: UserPreference) : ViewModelProvider.NewInstanceFactory() {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         @Suppress("UNCHECKED_CAST")
         return when {

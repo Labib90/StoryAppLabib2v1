@@ -45,7 +45,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation(libs.mediation.test.suite)
+//    implementation(libs.mediation.test.suite)
 //    implementation(libs.compose.preview.renderer)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
@@ -72,5 +72,8 @@ dependencies {
 
     //Refresh Swipe Layout
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01")
+
+
+
 
 }
