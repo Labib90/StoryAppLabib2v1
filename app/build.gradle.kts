@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    alias(libs.plugins.googleAndroidLibrariesMapsplatformSecretsGradlePlugin)
 }
 
 android {
@@ -45,6 +46,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.play.services.maps)
 //    implementation(libs.mediation.test.suite)
 //    implementation(libs.compose.preview.renderer)
     testImplementation(libs.junit)
@@ -73,7 +75,8 @@ dependencies {
     //Refresh Swipe Layout
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01")
 
-
+    //gms
+    implementation("com.google.android.gms:play-services-maps:18.1.0")
 
 
 }

@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.storyapplabib2.data.model.UserPreference
 import com.example.storyapplabib2.view.login.LoginViewModel
 import com.example.storyapplabib2.view.main.MainViewModel
+import com.example.storyapplabib2.view.maps.MapsViewModel
 import com.example.storyapplabib2.view.welcome.WelcomeViewModel
 
 class ViewModelFactory(private val pref: UserPreference) : ViewModelProvider.NewInstanceFactory() {
@@ -20,6 +21,9 @@ class ViewModelFactory(private val pref: UserPreference) : ViewModelProvider.New
             }
             modelClass.isAssignableFrom(MainViewModel::class.java) -> {
                 MainViewModel(pref) as T
+            }
+            modelClass.isAssignableFrom(MapsViewModel::class.java) -> {
+                MapsViewModel() as T
             }
             else -> throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
         }

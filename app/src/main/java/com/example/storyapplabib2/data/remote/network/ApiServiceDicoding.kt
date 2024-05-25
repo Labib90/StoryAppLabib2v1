@@ -14,6 +14,12 @@ import retrofit2.http.*
 
 interface ApiServiceDicoding {
 
+    @GET("/v1/stories?location=1")
+    fun getStoriesLocation(
+    @Query("page") page: Int?=null,
+    @Query("size") size: Int?=null,
+    ): Call<StoriesResponse>
+
     @GET("/v1/stories")
     fun getStories(
         @Query("page") page: Int? = null,

@@ -13,4 +13,10 @@
         android:icon="@drawable/ic_add_a_photo_24"
         android:title="@string/add_story"
         app:showAsAction="collapseActionView|always" />
+
+    <item
+        android:id="@+id/add_maps"
+        android:icon="@drawable/dashicons_location_alt"
+        android:title="@string/add_maps"
+        app:showAsAction="collapseActionView|always" />
 </menu>
